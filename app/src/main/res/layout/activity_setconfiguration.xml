@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:keepScreenOn="true"
+    tools:context=".SetConfiguration">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_oval_shape"
+        android:paddingTop="50dp">
+        <include
+            layout="@layout/config_ac_input_layout"/>
+        <include
+            layout="@layout/config_server_layout"/>
+        <include
+            layout="@layout/config_wifi_layout"/>
+        <include
+            layout="@layout/config_system_layout"/>
+        <include
+            layout="@layout/config_bluetooth_layout"/>
+        <include
+            layout="@layout/config_protection_layout"/>
+        <include
+            layout="@layout/config_rfid_layout"/>
+        <include
+            layout="@layout/config_sw_update_layout"/>
+        <include
+            layout="@layout/config_about_system"/>
+        <include
+            layout="@layout/config_set_schedule"/>
+    </LinearLayout>
+
+</LinearLayout>

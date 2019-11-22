@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/config_sw_update_layout"
+    android:visibility="gone">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:orientation="horizontal">-->
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.7"-->
+            <!--android:padding="10dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="Select Software File (Local)"/>-->
+        <!--<ImageView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.3"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:padding="10dp"-->
+            <!--android:src="@drawable/folder_primary"/>-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="Check For Update"/>
+        <ImageView
+            android:id="@+id/check_update"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:scaleType="centerInside"
+            android:padding="10dp"
+            android:src="@drawable/sw_update_primary"/>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:orientation="horizontal">-->
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.7"-->
+            <!--android:padding="10dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="Check For Update 2"/>-->
+        <!--<ImageView-->
+            <!--android:id="@+id/check_update_one"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.3"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:padding="10dp"-->
+            <!--android:src="@drawable/sw_update_primary"/>-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="Current Software version"/>
+        <TextView
+            android:id="@+id/current_version"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="--"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:id="@+id/update_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/update_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Update Available"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:text="Update"
+            android:gravity="center"
+            android:background="@drawable/button_shape"
+            android:textColor="@color/colorWhite"/>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="1. Please do not turn page during software update."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="2. Please do not turn off bluetooth/GPS during software Update"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="3. Please do not close app during update."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="4. Do not Turn OFF the Charger. This can be harmful for the device."/>
+
+    </LinearLayout>
+
+</LinearLayout>

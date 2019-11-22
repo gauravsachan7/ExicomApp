@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/alarm_log_index"
+        android:layout_width="0dp"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="0.1" />
+    <TextView
+        android:id="@+id/alarm_log_time_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="0.35"/>
+    <TextView
+        android:id="@+id/alarm_name"
+        android:layout_width="0dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.35"/>
+    <TextView
+        android:id="@+id/alarm_status"
+        android:layout_width="0dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"/>
+</LinearLayout>

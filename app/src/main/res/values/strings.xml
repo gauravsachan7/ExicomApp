@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">evcharger</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_configuration">Configuration</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_search">Search</string>
+    <string name="title_sign_in">Sign In</string>
+    <string name="title_email_id">Email Id</string>
+    <string name="title_password">Password</string>
+    <string name="title_login_message">Enter your email address or username and password.</string>
+    <string name="title_live_data">Live Data</string>
+    <string name="title_alarms">Alarms</string>
+    <string name="title_logs">Logs</string>
+</resources>

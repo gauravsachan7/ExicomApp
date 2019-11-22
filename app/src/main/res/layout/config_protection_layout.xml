@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/config_protection_layout"
+    android:visibility="gone">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:orientation="horizontal">-->
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.6"-->
+            <!--android:padding="10dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="Earth Leakage Cut-Off"/>-->
+        <!--<EditText-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.4"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:paddingStart="5dp"-->
+            <!--android:background="@drawable/square_edit_box"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:orientation="horizontal">-->
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.6"-->
+            <!--android:padding="10dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="Short Circuit Current "/>-->
+        <!--<EditText-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.4"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:paddingStart="5dp"-->
+            <!--android:background="@drawable/square_edit_box"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:orientation="horizontal">-->
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.6"-->
+            <!--android:padding="10dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="Auto Recovery Time Delay"/>-->
+        <!--<EditText-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.4"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:paddingStart="5dp"-->
+            <!--android:background="@drawable/square_edit_box"/>-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="Energy Meter Alarm"/>
+        <Switch
+            android:id="@+id/energyMeterAlarm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:layout_marginEnd="20dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="Earth Disconnect Alarm"/>
+        <Switch
+            android:id="@+id/earthDiscAlarm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:layout_marginEnd="20dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="N-E Voltage Alarm"/>
+        <Switch
+            android:id="@+id/neVoltAlarm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:layout_marginEnd="20dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="N-E Voltage Cut-Off "/>
+        <EditText
+            android:id="@+id/neVoltCutOffVal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:inputType="number"
+            android:layout_margin="5dp"
+            android:paddingStart="5dp"
+            android:background="@drawable/square_edit_box"/>
+        <ImageView
+            android:id="@+id/save_ne_volt_cutOff"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:onClick="saveAcConfigClicked"
+            android:src="@drawable/ic_save"
+            android:scaleType="centerInside"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.1"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Note: Please restart charger after making changes to take effect."/>
+</LinearLayout>
